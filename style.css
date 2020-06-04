@@ -1,0 +1,23 @@
+#article-links {
+  margin-top: 1em;
+  border: 2px solid orangered;
+  border-radius: 1em;
+  background-color: rgba(238, 232, 170, 0.507);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+h1.links-article_heading {
+  padding-left: 1em;
+  color: darkolivegreen;
+}
+
+li {
+  padding-bottom: 1em;
+}
+
+li a {
+  text-decoration: none;
+  color: green;
+}
