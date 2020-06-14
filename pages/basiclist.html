@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    ul {
+      background-color: #6666ff;
+      border: 1px solid #000000;
+      width: 100px;
+    }
+    li {
+      background-color: #cccccc;
+      border: 1px solid #ffff00;
+    }
+
+    /*LISTS have a padding left by default*/
+    /* ul {
+      padding-left: 0;
+    } */
+
+    .padded {
+      padding: 6px;
+    }
+
+    .margined {
+      margin: 6px;
+    }
+
+    li.none {
+      list-style-type: none;
+    }
+
+    /* outside is the default*/
+    .outside {
+      list-style-position: outside;
+    }
+
+    .ml-left {
+      margin-left: 12px;
+    }
+
+    .inside {
+      list-style-position: inside;
+    }
+
+    .pd-left {
+      padding-left: 12px;;
+    }
+  </style>
+  <title>Basic List</title>
+</head>
+<body>
+  <ul>
+    <li>Item #1</li>
+    <li class="padded">Item #2</li>
+    <li class="none margined">Item #3</li>
+    <li class="inside ml-left">Item 4 test test test test</li>
+    <li class="inside pd-left">Item 5 test test test test</li>
+  </ul>
+</body>
+</html>

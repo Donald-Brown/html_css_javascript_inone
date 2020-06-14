@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #theImg {
+        width: 400px;
+        height: 500px;
+        background: url(../images/cats/collage.jpeg) no-repeat;
+        background-size: cover;
+        position: relative;
+        border: 1px solid #000000;
+        margin: 0 auto;
+      }
+      #theImg ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+      }
+      #theImg a {
+        position: absolute;
+        /*text-indent used to  run text off the page kind of hacky*/
+        text-indent: -1000em;
+      }
+      #theImg a:hover {
+        border: 4px dashed #ffff00;
+      }
+      #mc a {
+        top: 0px;
+        left: 0px;
+        width: 231px;
+        height: 146px;
+      }
+      #su a {
+        top: 0px;
+        left: 236px;
+        width: 164px;
+        height: 250px;
+      }
+      #st a {
+        top: 150px;
+        left: 0px;
+        width: 231px;
+        height: 100px;
+      }
+      #di a {
+        top: 255px;
+        left: 0px;
+        width: 160px;
+        height: 245px;
+      }
+      #sh a {
+        top: 255px;
+        left: 165px;
+        width: 235px;
+        height: 110px;
+      }
+
+      #au a {
+        top: 370px;
+        left: 165px;
+        width: 235px;
+        height: 130px;
+      }
+    </style>
+    <title>Image Map List</title>
+  </head>
+  <body>
+    <div id="theImg">
+      <ul>
+        <li id="mc"><a href="../images/cats/mckinnley.jpeg"
+            title="McKinley" target="-blank">McKinnley</a></li>
+        <li id="su"><a href="../images/cats/suni.jpeg"
+            title="Suni" target="-blank">Suni</a></li>
+        <li id="st" target="-blank"><a href="../images/cats/stormageddon.jpeg"
+            title="Stormageddon" target="-blank">Stormageddon</a></li>
+        <li id="di"><a href="../images/cats/diamond.jpeg"
+            title="Diamond" target="-blank">Diamond</a></li>
+        <li id="sh"><a href="../images/cats/diamond.jpeg"
+            title="Shasta" target="-blank">Shasta / Inara</a></li>
+        <li id="au"><a href="../images/cats/autumn.jpeg"
+          title="Autumn" target="-blank">Autumn </a></li>
+      </ul>
+    </div>
+  </body>
+</html>
