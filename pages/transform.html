@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      div {
+        width: 20rem;
+        height: 30rem;
+        border: solid 1px black;
+        background: linear-gradient(#f5ea70 0%, #ffffff 100%);
+        margin: 1rem;
+        float: left;
+      }
+
+      .two {
+        transform: rotate(10deg);
+      }
+
+      button {
+        font-size: 1.5rem;
+        border-radius: 10px;
+        border: solid 1px #940c94;
+        background: linear-gradient(#cb2ff6 0%, #ffffff 100%);
+        padding: 0.25rem;
+        margin: 1rem;
+        /* transform: translate(20px, -20px); */
+      }
+
+      /* button:hover {
+        transform: scale(-1.5);
+      } */
+
+      /*Not sugested to use needed for screen readers*/
+      button:focus {
+        outline: none;
+      }
+
+      button:active {
+         /*simulated button push*/
+        transform: translate(2px, 1px);
+      }
+
+      section {
+        padding: 1rem;
+      }
+
+      .clearfix {
+        overflow: auto;
+      }
+    </style>
+    <title>Transform property</title>
+  </head>
+  <body>
+    <section class="clearfix">
+      <div class="one"></div>
+      <div class="two"></div>
+    </section>
+
+    <button>Cllick Me</button>
+  </body>
+</html>
