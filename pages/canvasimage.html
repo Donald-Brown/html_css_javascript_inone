@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing an image with canvas</title>
+  </head>
+  <body>
+    <style>
+      #myCanvas {
+        /* width: 800px;
+      height: 600px; */
+        margin: 0 auto;
+        display: block;
+      }
+
+      div {
+        width: 30px;
+        height: 30px;
+        background-color: red;
+      }
+    </style>
+    <canvas id="myCanvas" width="800" height="600"></canvas>
+    <div></div>
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var context = canvas.getContext("2d");
+      var img = new Image();
+      img.src = "../images/alexander-andrews-fsH1KjbdjE8-unsplash.jpg";
+      img.onload = () => {
+        context.drawImage(img, 10, 10, 780, 680);
+        context.drawImage(img, 842, 344,532,594, 0,300,200,200);
+      }
+    </script>
+  </body>
+</html>

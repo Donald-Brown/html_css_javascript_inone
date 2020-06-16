@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: #efefef;
+      }
+
+      .box {
+        width: 10rem;
+        height: 10rem;
+        margin: 3rem auto;
+        animation: myAnimation 3s infinite;
+      }
+
+      @keyframes myAnimation {
+        from {
+          transform: scale(0.5);
+          background: red;
+        }
+
+        to {
+          transform: scale(1);
+          background: blue;
+        }
+      }
+
+      h1 {
+        font-family: geneva, arial, helvetica, sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        padding: 2rem 0;
+        color: red;
+        animation: headerAnimation 2s;
+      }
+
+      @keyframes headerAnimation {
+        0% {
+          transform: translate(-100px, -200px);
+        }
+      }
+
+      .ball {
+        position: relative;
+        left: calc(100% - 20rem);
+        background-color: #ffb33a;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 10rem;
+        animation: ballAnimation 3s cubic-bezier(0.5, -0.5, 0.5, 1.5) infinite alternate;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      }
+
+      .ball:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes ballAnimation {
+        0% {
+          left: 0%;
+        }
+        100% {
+          left: calc(100% - 20rem);
+        }
+      }
+
+      .balls {
+        position: relative;
+        left: calc(100% - 20rem);
+        background-color: #ffb33a;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 10rem;
+        animation: bounce 3s;
+        animation-timing-function: cubic-bezier(0.5,-0.5, 0.5,1.5);
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes bounce {
+        0% {
+          left: 0%;
+        }
+        100% {
+          left: calc(100% - 20rem);
+        }
+      }
+    </style>
+    <title>Animations</title>
+  </head>
+  <body>
+    <h1>Headline</h1>
+    <div class="box"></div>
+    <div class="ball"></div>
+    <div class="balls"></div>
+  </body>
+</html>
