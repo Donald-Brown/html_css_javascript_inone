@@ -11,7 +11,10 @@ function sortedNames(){
   // sort the array
   names.sort();
   // join and display
-  document.theform.sorted.value = names.join("\n");
+  numberNames = names.map((value, index) => {
+    return `${index + 1}: ${value.toUpperCase()}`;
+  })
+  document.theform.sorted.value = numberNames.join("\n");
   document.theform.newname.value = '';
-  console.log(names);
+
 }
