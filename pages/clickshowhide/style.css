@@ -1,0 +1,64 @@
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+img {
+  margin-right: 12px;
+  margin-bottom: 6px;
+  border: 1px solid #000;
+}
+.mainimg {
+  float: left;
+  max-width: 35%;
+  height: auto;
+}
+#eHide,
+#pHide,
+#pHide2,
+#pHide3,
+#elevation,
+#photos,
+#photos2,
+#photos3 {
+  display: none;
+}
+#eShow,
+#pShow,
+#pShow2,
+#pShow3 {
+  display: block;
+}
+#photos,
+#photos2,
+#photos3 {
+  clear: both;
+}
+#photos img {
+  max-width: 20%;
+  height: auto;
+  clear: left;
+}
+#photos2 img {
+  max-width: 20%;
+  height: auto;
+  clear: left;
+}
+#photos3 img {
+  max-width: 20%;
+  height: auto;
+  clear: left;
+}
+
+.fakelink {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  color: #e03a3e;
+}
+section {
+  margin-bottom: 6px;
+}
+
+.mb-6 {
+  margin-bottom: 6px;
+}
